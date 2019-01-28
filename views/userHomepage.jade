@@ -1,0 +1,33 @@
+
+extends layout
+
+block content
+    .postSpan.justify-content-center.align-items-center.flex-column
+        .closed.d-flex.justify-content-end
+            button(type="button" class="btn closedButton")
+                i.fas.fa-times.text-white
+        .postFull.row
+            .col-sm-8.postFullLeft.d-flex.justify-content-center.align-items-start
+            .col-sm-4.postFullRight.d-flex.justify-content-center.align-items-center.flex-column
+    include ./navigation.jade
+
+    .container
+        .row
+            .col-sm-4.left.d-flex.justify-content-center.align-items-center
+                img(src="#{user.Avatar}", class="usernameHopageIMG" alt="").rounded-circle
+            .col-sm-8.right.d-flex.justify-content-center.align-items-start.flex-column
+                .usernameCard
+                    H1 #{user.Username}
+                .stats
+                    p #{nbPost} publications
+        .row.d-flex.justify-content-start.align-items-center.flex-wrap
+            each post in posts
+                include ./usernameHomepagePost.jade
+                //- .row.postZoom
+                //-     .col-sm-8.left.postZoomIMG(style="background-image:url(#{post.Img});")
+                //-     .col-sm-4.right.d-flex.justify-content-center.align-items-start.flex-column
+                //-             .usernameCard
+                //-                 H1 #{user.Username}
+                //-             .stats
+                //-                 p #{nbPost} publications
+

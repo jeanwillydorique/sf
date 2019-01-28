@@ -1,0 +1,22 @@
+extends layout
+
+block content
+
+    .container
+      .row
+      .row.creationCard
+        .col-sm-3
+        .col-sm-6.d-flex.flex-column.justify-content-around.align-items-center.bg-light.border.border-dark
+            form(action="./homepage", method="post" class="formulaireCon d-flex flex-column justify-content-around align-items-center")
+              input(type="text", name="mail" placeholder="Adresse mail") 
+              input(type="text", name="password" placeholder="Mot de passe")
+              input(type="submit", value="Se connecter", class="btn btn-primary")
+            .ligne.bg-dark
+            a(href="./users/newUser")
+              button(type="button" class="btn btn-primary") Créer un compte
+        .col-sm-3
+      .row
+
+
+
+

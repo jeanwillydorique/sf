@@ -1,0 +1,223 @@
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: #FCFCFC !important;
+  /* background-image: url("../images/vertical-waves.png"); */
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  padding-top: 10%; 
+}
+
+.row{
+  height: 30%;
+}
+
+.creationCard{
+  height: 50%;
+  width: 100%;
+  padding: 0; 
+  /* background-color:#F4F5F0; */
+}
+
+.formulaire, .formulaireCon{
+  height: 60%;
+  width: 100%;
+}
+
+.ligne{
+  height: 1%;
+  width: 70%;
+}
+
+/* post style */
+
+.rowpost{
+  height: 100%;
+}
+
+.post{
+  height: auto;
+  width: 90%;
+  margin: 0;
+  margin-bottom: 15%;
+  padding: 0;
+}
+
+.post p{
+  margin: 0;
+  padding: 0;
+}
+
+.imgPost{
+  height: 25rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.user{
+  height: 15%;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imgProfilUser{
+  height: 3rem;
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* userhomepage style */ 
+
+
+.usernameHopagePost{
+  height: 100%;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+}
+
+.usernameHopagePostIMG{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.usernameHopageIMG{
+  height: auto;
+  width: 60%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.overlay{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  color: white;
+}
+
+.usernameHopagePostIMG:hover .overlay {
+  opacity: 0.8;
+}
+
+
+/* nav bar style */ 
+
+.logo{
+  height: 100%;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo img{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navlogo{
+  height: 100%;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Indie Flower', cursive;
+  font-size: 2rem;
+}
+
+/* homepage */
+
+.avatarHomepage{
+  height: 2.5rem;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.right p{
+  font-size: 1rem;
+}
+
+
+/* post Full */ 
+
+.postSpan{
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1100;
+  display: none;
+}
+.postFull{
+  height: 80%;
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  background-color: #FCFCFC;
+}
+
+.postFullLeft{
+  height: 100%;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.postFullRight{
+  height: 100%;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+.closed{
+  width: 100%;
+}
+.flex{
+  display: flex !important;
+}
+
+.postFullAvatarCardIMG{
+  height: 3rem;
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

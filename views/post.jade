@@ -1,0 +1,29 @@
+
+
+
+
+.post.bg-light.d-flex.flex-column.justify-content-around(data-id="#{post._id}")
+    each user in users
+        if post.UserID == user._id
+            .user.d-flex.justify-content-around.align-items-center.textalign-center.pt-1.pb-1
+                .imgProfilUser.rounded-circle(style="background-image:url(#{user.Avatar});")
+                a(href="./#{post.UserID}") #{user.Username}
+    .imgPost(style="background-image:url(#{post.Img});")
+    p #{post.Content}
+    .icon.d-flex.justify-content-left.align-items-center.textalign-center
+        i.far.fa-heart
+        p.m-0 #{post.Like}
+        i.fas.fa-share
+    .comments.d-flex.justify-content-left.align-items-start.textalign-center.flex-column
+        each comment in comments
+            if post._id == comment.PostID 
+                each user in users
+                    if user._id == comment.UserID 
+                        .comment
+                            p #{user.Username} : #{comment.Content}
+    .input-group
+        input(type="text",class="form-control", name="addComment" placeholder="Ajouter un commentaire")
+        .input-group-append
+            span.input-group-text
+                i.far.fa-comments
+

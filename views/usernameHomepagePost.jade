@@ -1,0 +1,11 @@
+
+
+.usernameHopagePost.mr-3.mb-3(data-id="#{post._id}")
+    .usernameHopagePostIMG.d-flex.justify-content-center.align-items-center.flex-column(style="background-image:url(#{post.Img});")
+        .overlay.d-flex.justify-content-center.align-items-center.bg-dark(data-id="#{post._id}")
+            .like.d-flex.justify-content-center.align-items-center
+                i.far.fa-heart
+                p.m-0 #{post.Like}
+            .comments.d-flex.justify-content-center.align-items-center
+                i.far.fa-comment
+                p.m-0 #{post.Comment}

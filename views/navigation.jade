@@ -1,0 +1,24 @@
+
+
+nav.navbar.navbar-inverse.fixed-top.bg-white.shadow-sm.p-1.mb-5.bg-white.rounded
+    .container-fluid
+        ul.nav.navlogo.d-flex.justify-content-center.align-items-center
+            li.nav-item.logo.d-flex.justify-content-center.align-items-center
+                img(src="./images/logo_XL.png", alt="")
+            li.nav-item.d-flex.justify-content-center.align-items-center
+                a(href="./").nav-link.text-decoration-none.text-dark Picha
+        .searchBar.d-flex.justify-content-between.align-items-center
+                    input(type="text", name="search" placeholder="Rechercher")
+                    .searchButton 
+                        a(href="./:search").nav-link.text-decoration-none.text-dark 
+                            i.fas.fa-search
+        ul.nav.justify-content-around
+            li.nav-item
+                a(href="./userHomepage").nav-link.text-decoration-none.text-dark 
+                    i.fas.fa-user-alt
+            li.nav-item
+                a(href="./userTchat").nav-link.text-decoration-none.text-dark 
+                    i.fas.fa-comments
+            li.nav-item
+                a(href="./userConfig").nav-link.text-decoration-none.text-dark 
+                    i.fas.fa-cog

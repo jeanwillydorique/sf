@@ -1,0 +1,28 @@
+
+extends layout
+
+block content
+
+    .main.d-flex.flex-column.align-items-center
+
+        include ./navigation.jade
+
+        .container
+            .row.rowpost
+                .col-sm-9.left.d-flex.flex-column.align-items-center.justify-content-around.pl-0
+                    each following in followings
+                        each post in posts
+                            if post.UserID === following
+                                include ./post.jade
+                .col-sm-3.right.pl-0
+                    .profil.d-flex.align-items-center.justify-content-between
+                        img(src="#{user.Avatar}", class="avatarHomepage" alt="")
+                        .usernameCard
+                            p.m-0 #{user.Username}
+                    .following
+                        each following in followings
+                            each userFollowing in users
+                                if userFollowing._id == following
+                                    .imgProfilUser.rounded-circle(style="background-image:url(#{userFollowing.Avatar});")
+                                    a(href="./#{userFollowing._id}") #{userFollowing.Username}
+                    .suggestion
